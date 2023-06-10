@@ -11,6 +11,7 @@ private:
 	static DataBaseConnection* connection;
 	pqxx::connection* dataBase;
 	DataBaseConnection();
+	~DataBaseConnection();
 
 public:
 	pqxx::connection* getDataBase();

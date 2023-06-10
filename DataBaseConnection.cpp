@@ -28,6 +28,11 @@ DataBaseConnection::DataBaseConnection() {
 
 }
 
+DataBaseConnection::~DataBaseConnection()
+{
+	dataBase->close();
+}
+
 
 pqxx::connection* DataBaseConnection::getDataBase()
 {
